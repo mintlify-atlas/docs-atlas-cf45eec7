@@ -1,0 +1,89 @@
+{
+  "projectType": "saas",
+  "projectName": "Left-Sided Studios",
+  "projectDescription": "Left-Sided Studios is an independent game development collective with a public-facing web hub showcasing original titles, subsidiary labels, studio news, and an AI-powered chatbot assistant.",
+  "theme": "willow",
+  "primaryColor": "#14ed9a",
+  "lightColor": "#52625c",
+  "darkColor": "#050807",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "getting-around"
+        ]
+      },
+      {
+        "group": "The Studio",
+        "pages": [
+          "studio/about",
+          "studio/team",
+          "studio/ecosystem"
+        ]
+      },
+      {
+        "group": "Projects",
+        "pages": [
+          "projects/overview",
+          "projects/cardamania",
+          "projects/bumbl",
+          "projects/breakpoint",
+          "projects/rise"
+        ]
+      },
+      {
+        "group": "Network",
+        "pages": [
+          "network/overview",
+          "network/subsidiaries",
+          "network/partners"
+        ]
+      },
+      {
+        "group": "News & Community",
+        "pages": [
+          "news/overview",
+          "news/godot-migration",
+          "news/cardamania-update"
+        ]
+      },
+      {
+        "group": "Resources",
+        "pages": [
+          "resources/press-kit",
+          "resources/contact",
+          "resources/faq"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Dynamic project catalog with status tracking (In Development, Released, Paused, Canceled)",
+    "Studio network page listing subsidiary labels (ANdE, Gotch-ya, Bomb Banana, Endgame, Skullix)",
+    "News and blog system with public/private post visibility",
+    "AI-powered chatbot (Google Gemini) for studio Q&A",
+    "Dark/light mode with high-contrast accessibility toggle",
+    "Global search modal with type and genre filtering",
+    "Roadmap milestones per project",
+    "Press kit with downloadable brand assets",
+    "Netlify-hosted with Redis-backed session management and Netlify Functions"
+  ],
+  "publicApiSurface": [
+    "GET / — Home page with hero carousel, project spotlight, and team section",
+    "GET /about — Studio philosophy, mission, timeline, ecosystem tree, FAQ, and press kit",
+    "GET /games — Main projects catalog filtered to LSS-developer titles",
+    "GET /games/:id — Individual game detail with full description, roadmap, and gallery",
+    "GET /series/:id — Media series detail (e.g., FNaF: On the Clock)",
+    "GET /network — Studio network listing subsidiaries and partners",
+    "GET /network/:id — Subsidiary detail page",
+    "GET /partners — Partner listing",
+    "GET /partners/:id — Partner detail page",
+    "GET /news — Blog/news listing with public post filter",
+    "GET /news/:id — Full blog post view with related games",
+    "GET /contact — Contact/inquiry form",
+    "GET /admin — Admin panel (authenticated)",
+    "GET /privacy — Privacy policy"
+  ]
+}

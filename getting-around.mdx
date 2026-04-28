@@ -1,0 +1,183 @@
+---
+title: "Navigating the Left-Sided Studios website"
+description: "A complete guide to the LSS web hub — how to use the navbar, global search modal, appearance modes, AI chatbot, and navigate between sections."
+---
+
+The Left-Sided Studios web hub is the central portal for everything LSS: original games, subsidiary labels, development news, partner studios, and direct contact with the team. This page explains how the site is structured, how to move between sections, and how to get the most out of features like the global search modal and the built-in AI chatbot assistant.
+
+## Main sections
+
+The site is divided into six primary sections, each accessible from the top navigation bar.
+
+<CardGroup cols={3}>
+  <Card title="Home" icon="house" href="/introduction">
+    The landing portal. Features a rotating spotlight carousel, the latest news item, project highlights, and quick links to About, Projects, and Network.
+  </Card>
+  <Card title="About" icon="circle-info" href="/studio/about">
+    Studio philosophy, mission statement, founding timeline, the studio ecosystem diagram, an FAQ, and the press kit with downloadable brand assets.
+  </Card>
+  <Card title="Projects" icon="gamepad" href="/projects/overview">
+    The full catalog of LSS titles — Cardamania, Bumbl, BREAKPOINT, and RISE — with status badges, genre tags, roadmaps, and individual detail pages.
+  </Card>
+  <Card title="Network" icon="network-wired" href="/network/overview">
+    Official subsidiaries (Endgame Studios, Skullix Media Group), founder imprints (ANdE Studios, Gotch-ya Studios, Bomb Banana Studios), and strategic partners.
+  </Card>
+  <Card title="News" icon="newspaper" href="/news/overview">
+    All studio announcements and blog posts. Filterable by tag and searchable by keyword. Each article links to a full detail page.
+  </Card>
+  <Card title="Contact" icon="envelope" href="/resources/contact">
+    General email, Discord community link, individual founder social links, and a contact form that composes a pre-filled email to the studio.
+  </Card>
+</CardGroup>
+
+## Route reference
+
+Every major route in the LSS hub follows a consistent pattern. Use these paths to link directly to any page.
+
+| Route | Content |
+|---|---|
+| `/` | Home — landing portal |
+| `/about` | About — studio info, press kit |
+| `/games` | Projects gallery |
+| `/games/:id` | Individual project detail (e.g. `/games/cardamania`) |
+| `/series/:id` | Media series detail (e.g. `/series/fnaf-otc`) |
+| `/network` | Studio network overview |
+| `/network/:id` | Subsidiary detail (e.g. `/network/ande`) |
+| `/partners/:id` | Partner detail (e.g. `/partners/citadel`) |
+| `/news` | News and articles hub |
+| `/news/:id` | Individual article (e.g. `/news/godot-migration`) |
+| `/contact` | Contact and community links |
+
+## Navbar
+
+The navbar is fixed to the top of every page. On desktop it shows the full link set; on mobile it collapses into a slide-out drawer opened with the hamburger icon.
+
+| Link | Route | Accent color |
+|---|---|---|
+| Home (LSS logo) | `/` | Emerald |
+| About | `/about` | Emerald |
+| Projects | `/games` | Emerald |
+| Network | `/network` | Purple |
+| News | `/news` | Amber |
+| Contact | `/contact` | Blue |
+
+The active link is indicated by a colored underline that slides between links. A thin divider separates the nav links from the icon controls on the right.
+
+## Appearance modes
+
+Three appearance controls sit in the navbar to the right of the nav links.
+
+<CardGroup cols={3}>
+  <Card title="Dark / light mode" icon="moon">
+    Toggles between a dark theme (black backgrounds, white text) and a light theme (white backgrounds, dark text). The LSS logo swaps automatically to maintain contrast.
+  </Card>
+  <Card title="High contrast mode" icon="circle-half-stroke">
+    Increases text and border contrast for improved legibility. A toggle indicator in the navbar shows when it is active. This setting layers on top of whichever color theme is selected.
+  </Card>
+  <Card title="System default" icon="display">
+    The site defaults to dark mode on first load. Your preference is remembered for subsequent visits.
+  </Card>
+</CardGroup>
+
+## Search modal
+
+The global search modal gives you instant access to every piece of content on the site — games, articles, studios, partners, and site pages — from anywhere.
+
+**Opening the modal:** Click the search icon in the navbar or use the keyboard shortcut **Cmd+K** (Mac) / **Ctrl+K** (Windows/Linux).
+
+<Note>
+The search modal is accessible on every page. Pressing Escape or clicking outside the overlay closes it without navigating away.
+</Note>
+
+### Searchable content types
+
+The modal searches across five content categories, each labeled with a color-coded badge in results.
+
+| Type | Color | What it includes |
+|---|---|---|
+| Project | Emerald | All games and series from LSS and its subsidiaries |
+| Article | Amber | All news posts and blog articles |
+| Studio | Purple | LSS parent studio and all subsidiaries |
+| Partner | Blue | Strategic and creative partner studios |
+| Site | Amber | Main navigation pages (Home, About, Projects, etc.) |
+
+### Filters
+
+The left sidebar of the modal has three filter panels:
+
+- **Content type** — narrows results to one of the five types above, or shows all
+- **Status** — filters projects by development status: In Development, Released, Paused, or Canceled
+- **Genres** — filters games by genre (e.g. TCG, Platformer, Horror, RPG)
+
+Filters combine with the text query. Selecting a content type and typing a keyword returns only matching items of that type.
+
+### Search prefix commands
+
+Type a prefix word before your search term to jump straight to a content type without using the sidebar filters.
+
+<Steps>
+  <Step title="game: or project:">
+    Restricts results to Project type. Example: `game: cardamania`
+  </Step>
+  <Step title="news:, article:, or blog:">
+    Restricts results to Article type. Example: `news: godot`
+  </Step>
+  <Step title="studio: or subsidiary:">
+    Restricts results to Studio type. Example: `studio: skullix`
+  </Step>
+  <Step title="partner:">
+    Restricts results to Partner type. Example: `partner: citadel`
+  </Step>
+  <Step title="site: or page:">
+    Restricts results to Site type. Example: `site: contact`
+  </Step>
+</Steps>
+
+<Tip>
+Prefix commands are case-insensitive. `Game:`, `game:`, and `GAME:` all work the same way.
+</Tip>
+
+## AI chatbot assistant
+
+Every page on the LSS hub includes an embedded AI chatbot assistant, powered by Google Gemini. The chatbot appears as a floating button in the lower corner of the screen.
+
+Use it to:
+
+- Ask questions about LSS projects, timelines, and team members
+- Get quick answers about studio history and philosophy
+- Navigate to a specific page or section by describing what you are looking for
+- Learn about the studio's network of subsidiaries and partners
+
+<Note>
+The chatbot is contextually aware of LSS content pulled from the site database. It is best suited for factual questions about the studio and its projects rather than general-purpose queries.
+</Note>
+
+## Projects gallery
+
+The Projects page at `/games` shows all main LSS titles in a responsive card grid. Each card displays:
+
+- A 16:9 promotional image
+- Genre tags
+- Development status badge (In Development, Released, Paused, Canceled)
+
+Clicking a card navigates to the project detail page at `/games/:id`. Detail pages include the full game description, a development roadmap with milestone markers, platform info, and links to external pages like GameJolt listings.
+
+<Tip>
+Series produced by media subsidiaries (such as Skullix Media Group's cinematic series) are accessible at `/series/:id` rather than `/games/:id`. Both route patterns appear in search results labeled as **Project** type.
+</Tip>
+
+## Network and partners
+
+The Network page at `/network` is divided into three sections:
+
+- **Official subsidiaries** — studio units like Endgame Studios and Skullix Media Group
+- **Founder imprints** — personal creative labels owned by individual co-founders (ANdE Studios, Gotch-ya Studios, Bomb Banana Studios)
+- **Strategic partners** — external studios such as Citadel Studios and Geekza Productions
+
+Each entry links to a detail page at `/network/:id` or `/partners/:id` with a full description, game catalog, and production notes.
+
+## News and articles
+
+The News page at `/news` lists all published blog posts with tag filtering and a keyword search bar. Posts can be filtered by tag (Tech, Development, Announcement, Studio, etc.) or searched by title and excerpt text.
+
+Each article opens at `/news/:id` and may include a related projects section linking back to the games mentioned in the post.
